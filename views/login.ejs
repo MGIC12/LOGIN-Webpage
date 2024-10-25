@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <title>LOGIN</title>
   </head>
-  <body></body>
+  <body>
+    <div class="login-form">
+      <h2>Iniciar Sesion</h2>
+      <form action="auth" method="POST">
+        <input type="text" name="user" id="user" placeholder="User" />
+        <input type="password" name="pass" id="pass" placeholder="Password" />
+        <input type="submit" class="btn-login" value="Login" />
+      </form>
+      <a href="register" class="btn-register">Register</a>
+    </div>
+  </body>
 </html>

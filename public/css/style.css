@@ -1,0 +1,145 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: auto;
+  text-align: center;
+}
+
+.login-form,
+.contenedor {
+  width: 300px;
+  margin: 0 auto;
+}
+.login-form h1 {
+  text-align: center;
+  color: midnightblue;
+  font-size: 28px;
+  padding: 70px 0 10px 0;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+/* Estilos de botones */
+.btn-login {
+  width: 100%;
+  padding: 15px;
+  background-color: #6f42c1;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+}
+.btn-login:hover,
+.btn-login:active {
+  color: #ffffff;
+  background-color: #61428f;
+  border-color: #61428f;
+}
+.btn-login:focus {
+  box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
+}
+
+.btn-register {
+  width: 100%;
+  padding: 15px;
+  background-color: #34d399;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+  margin-top: 20px;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+}
+.btn-register:hover,
+.btn-register:active {
+  color: #ffffff;
+  background-color: #10b981;
+  border-color: #10b981;
+}
+.btn-register:focus {
+  box-shadow: 0 0 0 3px #10b981;
+}
+
+.btn-cancel {
+  width: 50%;
+  padding: 15px;
+  background-color: #9ca3af;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: medium;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+}
+.btn-cancel:hover,
+.btn-cancel:active {
+  color: #ffffff;
+  background-color: #6b7280;
+  border-color: #6b7280;
+}
+.btn-cancel:focus {
+  box-shadow: 0 0 0 3px #6b7280;
+}
+
+.btn-save {
+  width: 50%;
+  padding: 15px;
+  background-color: rgb(3, 0, 173);
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: medium;
+  color: #ffffff;
+  margin-top: 20px;
+
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+}
+.btn-save:hover,
+.btn-save:active {
+  color: #ffffff;
+  background-color: #0e0088;
+  border-color: #0e0088;
+}
+.btn-register:focus {
+  box-shadow: 0 0 0 3px #0e0088;
+}
+/* Form user registration*/
+.register-form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 0 20px 60px 20px;
+  margin-top: 35px;
+  font-family: Arial, sans-serif;
+  text-align: left !important;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.register-form h1 {
+  text-align: left;
+  color: midnightblue;
+  font-size: 22px;
+  padding: 70px 0 10px 0;
+}

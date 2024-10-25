@@ -33,8 +33,15 @@ app.use(
 // Invoco connection
 const connection = require("./database/db");
 
+// Rutas
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.render("index", { msg: "Boludin" });
+});
+app.get("/login", (req, res) => {
+  res.render("login");
+});
+app.get("/register", (req, res) => {
+  res.render("register");
 });
 
 app.listen(3000, (req, res) => {
