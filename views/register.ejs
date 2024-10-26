@@ -10,8 +10,17 @@
     <div class="register-form">
       <h1>Form registration</h1>
       <form action="register" method="POST">
-        <label for="user">Username</label>
-        <input type="text" name="user" placeholder="Username" />
+        <label for="user">User</label>
+        <input type="text" name="user" placeholder="Username" required />
+
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Name" required />
+
+        <label for="rol">Rol</label>
+        <select name="rol" id="rol" class="select-css">
+          <option value="admin" selected>Admin</option>
+          <option value="data entry">Data Entry</option>
+        </select>
 
         <label for="pass">Password</label>
         <input type="password" name="pass" placeholder="Password" required />
@@ -22,5 +31,21 @@
         </div>
       </form>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <% if (typeof alert != 'undefined') { %>
+    <script>
+      Swal.fire({
+        title: "<%= alertTitle %>",
+        text: "<%= alertMessage %>",
+        icon: "<%= alertIcon %>",
+        showConfirmButton: <%= showConfirmButton %> ,
+        timer: <%= timer %>
+      }).then(() => {
+        window.location = "/ <%= ruta %>"
+      });
+    </script>
+    <% } %>
   </body>
 </html>
